@@ -21,6 +21,7 @@ class GoogleBtn extends Component {
 
   login (response) {
     if(response.accessToken){
+       console.log(response);
       this.setState(state => ({
         isLogined: true,
         accessToken: response.accessToken
